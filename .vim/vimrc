@@ -1,0 +1,39 @@
+" David Arcila
+
+" Color
+" {
+syntax enable			" enable syntax processing
+colorscheme molokai
+" }
+
+" Tabs
+" {
+set tabstop=4			" number of visual spaces per TAB
+set softtabstop=4		" number of spaces in tab when editing
+set expandtab           " tabs are spaces
+" }
+
+" UI
+" {
+set relativenumber      " show relative line numbers
+" set number            " show line numbers
+" set cursorline        " highlight current line
+filetype indent on      " load filetype-specific indent files
+set showmatch           " highlight matching [{()}]
+" }
+
+" Searching
+" {
+set incsearch           " search as characters are entered
+" set hlsearch          " highlight matches
+set path+=**		" search down into subfolders
+set wildmenu
+" }
+
+" Backups
+" {
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
+" }
