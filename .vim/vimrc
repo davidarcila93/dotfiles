@@ -10,6 +10,7 @@ colorscheme molokai
 " {
 set tabstop=4			" number of visual spaces per TAB
 set softtabstop=4		" number of spaces in tab when editing
+set shiftwidth=0        " default to sts spaces for shifting
 set expandtab           " tabs are spaces
 " }
 
@@ -36,4 +37,8 @@ set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+" }
+" YAML indentation
+" {
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " }
